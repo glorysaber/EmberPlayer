@@ -2,19 +2,32 @@
 //  EmberPlayerApp.swift
 //  Shared
 //
-//  Created by Admin on 6/4/22.
+//  Created by Stephen Kac on 6/4/22.
 //
 
 import SwiftUI
 
-@main
-struct EmberPlayerApp: App {
-    let persistenceController = PersistenceController.shared
+@MainActor
+private class State {
+  let persistenceController = PersistenceController.shared
+  // Must be lazy due to it using self before init.
+  lazy var model = MediaModel(database: MediaItemModelDatabaseAdapter(context: persistenceController.container.viewContext))
+}
 
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+@main
+@MainActor
+struct EmberPlayerApp: App {
+  // The state must be stored seperately in a class due to limitation on modifying state in a Struct.
+  // The lazy var means accessing it is considered a mutating operation.
+  private let state = State()
+
+  var body: some Scene {
+    WindowGroup {
+      VideoPlayerView(model: state.model)
+        .onOpenURL { url in
+          // Handles any urls sent to us.
+          state.model.open(url: url)
         }
     }
+  }
 }

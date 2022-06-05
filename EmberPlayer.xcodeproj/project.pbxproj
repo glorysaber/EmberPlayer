@@ -7,54 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		841380D9284C380700A57BC4 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841380D8284C380700A57BC4 /* Tests_iOS.swift */; };
-		841380DB284C380700A57BC4 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841380DA284C380700A57BC4 /* Tests_iOSLaunchTests.swift */; };
-		841380E5284C380700A57BC4 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841380E4284C380700A57BC4 /* Tests_macOS.swift */; };
-		841380E7284C380700A57BC4 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841380E6284C380700A57BC4 /* Tests_macOSLaunchTests.swift */; };
 		841380E8284C380700A57BC4 /* EmberPlayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 841380BD284C380600A57BC4 /* EmberPlayer.xcdatamodeld */; };
 		841380E9284C380700A57BC4 /* EmberPlayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 841380BD284C380600A57BC4 /* EmberPlayer.xcdatamodeld */; };
 		841380EA284C380700A57BC4 /* EmberPlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841380BF284C380600A57BC4 /* EmberPlayerApp.swift */; };
 		841380EB284C380700A57BC4 /* EmberPlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841380BF284C380600A57BC4 /* EmberPlayerApp.swift */; };
-		841380EC284C380700A57BC4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841380C0284C380600A57BC4 /* ContentView.swift */; };
-		841380ED284C380700A57BC4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841380C0284C380600A57BC4 /* ContentView.swift */; };
 		841380EE284C380700A57BC4 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841380C1284C380600A57BC4 /* Persistence.swift */; };
 		841380EF284C380700A57BC4 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841380C1284C380600A57BC4 /* Persistence.swift */; };
 		841380F0284C380700A57BC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841380C2284C380700A57BC4 /* Assets.xcassets */; };
 		841380F1284C380700A57BC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841380C2284C380700A57BC4 /* Assets.xcassets */; };
+		84138101284C388600A57BC4 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84138100284C388600A57BC4 /* VideoPlayerView.swift */; };
+		84138102284C388600A57BC4 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84138100284C388600A57BC4 /* VideoPlayerView.swift */; };
+		84138104284C3A3500A57BC4 /* testVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 84138103284C3A2700A57BC4 /* testVideo.mp4 */; };
+		84138105284C3A3600A57BC4 /* testVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 84138103284C3A2700A57BC4 /* testVideo.mp4 */; };
+		8413810C284C498500A57BC4 /* MediaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8413810B284C498500A57BC4 /* MediaModel.swift */; };
+		8413810D284C498500A57BC4 /* MediaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8413810B284C498500A57BC4 /* MediaModel.swift */; };
+		8471E44B284C585F00606F39 /* MediaItemModelDatabaseAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8471E44A284C585F00606F39 /* MediaItemModelDatabaseAdapter.swift */; };
+		8471E44C284C585F00606F39 /* MediaItemModelDatabaseAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8471E44A284C585F00606F39 /* MediaItemModelDatabaseAdapter.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		841380D5284C380700A57BC4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 841380B8284C380600A57BC4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 841380C6284C380700A57BC4;
-			remoteInfo = "EmberPlayer (iOS)";
-		};
-		841380E1284C380700A57BC4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 841380B8284C380600A57BC4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 841380CC284C380700A57BC4;
-			remoteInfo = "EmberPlayer (macOS)";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		841380BE284C380600A57BC4 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		841380BF284C380600A57BC4 /* EmberPlayerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmberPlayerApp.swift; sourceTree = "<group>"; };
-		841380C0284C380600A57BC4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		841380C1284C380600A57BC4 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		841380C2284C380700A57BC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		841380C7284C380700A57BC4 /* EmberPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmberPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		841380CD284C380700A57BC4 /* EmberPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmberPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		841380CF284C380700A57BC4 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		841380D4284C380700A57BC4 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		841380D8284C380700A57BC4 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
-		841380DA284C380700A57BC4 /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
-		841380E0284C380700A57BC4 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		841380E4284C380700A57BC4 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
-		841380E6284C380700A57BC4 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		84138100284C388600A57BC4 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		84138103284C3A2700A57BC4 /* testVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = testVideo.mp4; path = ../../../Downloads/testVideo.mp4; sourceTree = "<group>"; };
+		84138109284C40ED00A57BC4 /* EmberPlayer--macOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "EmberPlayer--macOS--Info.plist"; sourceTree = "<group>"; };
+		8413810A284C438400A57BC4 /* EmberPlayer--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "EmberPlayer--iOS--Info.plist"; sourceTree = "<group>"; };
+		8413810B284C498500A57BC4 /* MediaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaModel.swift; sourceTree = "<group>"; };
+		8471E44A284C585F00606F39 /* MediaItemModelDatabaseAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItemModelDatabaseAdapter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,30 +56,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		841380D1284C380700A57BC4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		841380DD284C380700A57BC4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		841380B7284C380600A57BC4 = {
 			isa = PBXGroup;
 			children = (
+				8413810A284C438400A57BC4 /* EmberPlayer--iOS--Info.plist */,
+				84138109284C40ED00A57BC4 /* EmberPlayer--macOS--Info.plist */,
 				841380BC284C380600A57BC4 /* Shared */,
 				841380CE284C380700A57BC4 /* macOS */,
-				841380D7284C380700A57BC4 /* Tests iOS */,
-				841380E3284C380700A57BC4 /* Tests macOS */,
 				841380C8284C380700A57BC4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -104,9 +74,12 @@
 			isa = PBXGroup;
 			children = (
 				841380BF284C380600A57BC4 /* EmberPlayerApp.swift */,
-				841380C0284C380600A57BC4 /* ContentView.swift */,
+				84138100284C388600A57BC4 /* VideoPlayerView.swift */,
+				8413810B284C498500A57BC4 /* MediaModel.swift */,
+				8471E44A284C585F00606F39 /* MediaItemModelDatabaseAdapter.swift */,
 				841380C1284C380600A57BC4 /* Persistence.swift */,
 				841380C2284C380700A57BC4 /* Assets.xcassets */,
+				84138103284C3A2700A57BC4 /* testVideo.mp4 */,
 				841380BD284C380600A57BC4 /* EmberPlayer.xcdatamodeld */,
 			);
 			path = Shared;
@@ -117,8 +90,6 @@
 			children = (
 				841380C7284C380700A57BC4 /* EmberPlayer.app */,
 				841380CD284C380700A57BC4 /* EmberPlayer.app */,
-				841380D4284C380700A57BC4 /* Tests iOS.xctest */,
-				841380E0284C380700A57BC4 /* Tests macOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,24 +100,6 @@
 				841380CF284C380700A57BC4 /* macOS.entitlements */,
 			);
 			path = macOS;
-			sourceTree = "<group>";
-		};
-		841380D7284C380700A57BC4 /* Tests iOS */ = {
-			isa = PBXGroup;
-			children = (
-				841380D8284C380700A57BC4 /* Tests_iOS.swift */,
-				841380DA284C380700A57BC4 /* Tests_iOSLaunchTests.swift */,
-			);
-			path = "Tests iOS";
-			sourceTree = "<group>";
-		};
-		841380E3284C380700A57BC4 /* Tests macOS */ = {
-			isa = PBXGroup;
-			children = (
-				841380E4284C380700A57BC4 /* Tests_macOS.swift */,
-				841380E6284C380700A57BC4 /* Tests_macOSLaunchTests.swift */,
-			);
-			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,42 +139,6 @@
 			productReference = 841380CD284C380700A57BC4 /* EmberPlayer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		841380D3284C380700A57BC4 /* Tests iOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 841380FA284C380700A57BC4 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
-			buildPhases = (
-				841380D0284C380700A57BC4 /* Sources */,
-				841380D1284C380700A57BC4 /* Frameworks */,
-				841380D2284C380700A57BC4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				841380D6284C380700A57BC4 /* PBXTargetDependency */,
-			);
-			name = "Tests iOS";
-			productName = "Tests iOS";
-			productReference = 841380D4284C380700A57BC4 /* Tests iOS.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-		841380DF284C380700A57BC4 /* Tests macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 841380FD284C380700A57BC4 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
-			buildPhases = (
-				841380DC284C380700A57BC4 /* Sources */,
-				841380DD284C380700A57BC4 /* Frameworks */,
-				841380DE284C380700A57BC4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				841380E2284C380700A57BC4 /* PBXTargetDependency */,
-			);
-			name = "Tests macOS";
-			productName = "Tests macOS";
-			productReference = 841380E0284C380700A57BC4 /* Tests macOS.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -237,14 +154,6 @@
 					};
 					841380CC284C380700A57BC4 = {
 						CreatedOnToolsVersion = 13.4.1;
-					};
-					841380D3284C380700A57BC4 = {
-						CreatedOnToolsVersion = 13.4.1;
-						TestTargetID = 841380C6284C380700A57BC4;
-					};
-					841380DF284C380700A57BC4 = {
-						CreatedOnToolsVersion = 13.4.1;
-						TestTargetID = 841380CC284C380700A57BC4;
 					};
 				};
 			};
@@ -263,8 +172,6 @@
 			targets = (
 				841380C6284C380700A57BC4 /* EmberPlayer (iOS) */,
 				841380CC284C380700A57BC4 /* EmberPlayer (macOS) */,
-				841380D3284C380700A57BC4 /* Tests iOS */,
-				841380DF284C380700A57BC4 /* Tests macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -274,6 +181,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84138105284C3A3600A57BC4 /* testVideo.mp4 in Resources */,
 				841380F0284C380700A57BC4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,21 +190,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84138104284C3A3500A57BC4 /* testVideo.mp4 in Resources */,
 				841380F1284C380700A57BC4 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		841380D2284C380700A57BC4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		841380DE284C380700A57BC4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,9 +203,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				841380EA284C380700A57BC4 /* EmberPlayerApp.swift in Sources */,
+				84138101284C388600A57BC4 /* VideoPlayerView.swift in Sources */,
+				8471E44B284C585F00606F39 /* MediaItemModelDatabaseAdapter.swift in Sources */,
+				8413810C284C498500A57BC4 /* MediaModel.swift in Sources */,
 				841380EE284C380700A57BC4 /* Persistence.swift in Sources */,
 				841380E8284C380700A57BC4 /* EmberPlayer.xcdatamodeld in Sources */,
-				841380EC284C380700A57BC4 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,44 +216,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				841380EB284C380700A57BC4 /* EmberPlayerApp.swift in Sources */,
+				84138102284C388600A57BC4 /* VideoPlayerView.swift in Sources */,
+				8471E44C284C585F00606F39 /* MediaItemModelDatabaseAdapter.swift in Sources */,
+				8413810D284C498500A57BC4 /* MediaModel.swift in Sources */,
 				841380EF284C380700A57BC4 /* Persistence.swift in Sources */,
 				841380E9284C380700A57BC4 /* EmberPlayer.xcdatamodeld in Sources */,
-				841380ED284C380700A57BC4 /* ContentView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		841380D0284C380700A57BC4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				841380DB284C380700A57BC4 /* Tests_iOSLaunchTests.swift in Sources */,
-				841380D9284C380700A57BC4 /* Tests_iOS.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		841380DC284C380700A57BC4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				841380E7284C380700A57BC4 /* Tests_macOSLaunchTests.swift in Sources */,
-				841380E5284C380700A57BC4 /* Tests_macOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		841380D6284C380700A57BC4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 841380C6284C380700A57BC4 /* EmberPlayer (iOS) */;
-			targetProxy = 841380D5284C380700A57BC4 /* PBXContainerItemProxy */;
-		};
-		841380E2284C380700A57BC4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 841380CC284C380700A57BC4 /* EmberPlayer (macOS) */;
-			targetProxy = 841380E1284C380700A57BC4 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		841380F2284C380700A57BC4 /* Debug */ = {
@@ -409,6 +277,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -461,6 +331,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -475,14 +347,17 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N3S44ULQD4;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "EmberPlayer--iOS--Info.plist";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -505,14 +380,17 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N3S44ULQD4;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "EmberPlayer--iOS--Info.plist";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -538,10 +416,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N3S44ULQD4;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "EmberPlayer--macOS--Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -566,10 +445,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N3S44ULQD4;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "EmberPlayer--macOS--Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -582,85 +462,6 @@
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		841380FB284C380700A57BC4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N3S44ULQD4;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.StephenKac.Tests-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "EmberPlayer (iOS)";
-			};
-			name = Debug;
-		};
-		841380FC284C380700A57BC4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N3S44ULQD4;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.StephenKac.Tests-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "EmberPlayer (iOS)";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		841380FE284C380700A57BC4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N3S44ULQD4;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.StephenKac.Tests-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "EmberPlayer (macOS)";
-			};
-			name = Debug;
-		};
-		841380FF284C380700A57BC4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N3S44ULQD4;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.StephenKac.Tests-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "EmberPlayer (macOS)";
 			};
 			name = Release;
 		};
@@ -690,24 +491,6 @@
 			buildConfigurations = (
 				841380F8284C380700A57BC4 /* Debug */,
 				841380F9284C380700A57BC4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		841380FA284C380700A57BC4 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				841380FB284C380700A57BC4 /* Debug */,
-				841380FC284C380700A57BC4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		841380FD284C380700A57BC4 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				841380FE284C380700A57BC4 /* Debug */,
-				841380FF284C380700A57BC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
