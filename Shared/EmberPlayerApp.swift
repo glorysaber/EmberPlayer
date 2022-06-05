@@ -10,8 +10,11 @@ import SwiftUI
 @MainActor
 private class State {
   let persistenceController = PersistenceController.shared
+  let errorModel = ErrorViewModel()
   // Must be lazy due to it using self before init.
-  lazy var model = MediaModel(database: MediaItemModelDatabaseAdapter(context: persistenceController.container.viewContext))
+  lazy var model = MediaModel(database: MediaItemModelDatabaseAdapter(context: persistenceController.container.viewContext)) { [weak self] error in
+    self?.errorModel.error = error
+  }
 }
 
 @main
@@ -23,11 +26,14 @@ struct EmberPlayerApp: App {
 
   var body: some Scene {
     WindowGroup {
-      VideoPlayerView(model: state.model)
-        .onOpenURL { url in
-          // Handles any urls sent to us.
-          state.model.open(url: url)
-        }
+      ErrorView(model: state.errorModel) {
+        VideoPlayerView(model: state.model)
+          .onOpenURL { url in
+            // Handles any urls sent to us.
+            state.errorModel.error = nil
+            state.model.open(url: url)
+          }
+      }
     }
   }
 }

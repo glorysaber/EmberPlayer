@@ -42,7 +42,7 @@ struct VideoPlayerView<Model: PlayerViewModel>: View {
 
 struct VideoPlayerView_Previews: PreviewProvider {
 
-  private static var model = MediaModel(database: MediaItemModelDatabaseAdapter(context: PersistenceController.preview.container.viewContext), url: Bundle.main.url(forResource: "testVideo", withExtension: "mp4")!)
+  private static var model = MediaModel(database: MediaItemModelDatabaseAdapter(context: PersistenceController.preview.container.viewContext), url: Bundle.main.url(forResource: "testVideo", withExtension: "mp4")!) {_ in }
 
   static var previews: some View {
     VideoPlayerView(model: model)

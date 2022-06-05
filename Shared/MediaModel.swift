@@ -14,8 +14,8 @@ import QuickLookThumbnailing
 
 /// Allows the storage and retrieval of media items
 protocol MediaModelDatabase {
-  func save(_: MediaModelItem)
-  func getItem(for: URL) -> MediaModelItem
+  func save(_: MediaModelItem) throws
+  func getItem(for: URL) throws -> MediaModelItem
 }
 
 /// Used to store the seek position for a media item.
@@ -35,6 +35,8 @@ class MediaModel {
 
   private let database: any MediaModelDatabase
 
+  private let onError: (Error) -> Void
+
   private var currentItem: MediaModelItem? {
     didSet {
       currentItemURL = currentItem?.url
@@ -43,18 +45,23 @@ class MediaModel {
         return
       }
 
-      database.save(currentItem)
+      do {
+      try database.save(currentItem)
+      } catch {
+        print("Failed to save current item seek time.")
+      }
     }
   }
 
-  convenience init(database: MediaModelDatabase, url: URL) {
-    self.init(database: database)
+  convenience init(database: MediaModelDatabase, url: URL, onError: @escaping (Error) -> Void) {
+    self.init(database: database, onError: onError)
 
     open(url: url)
   }
 
-  required init(database: MediaModelDatabase) {
+  required init(database: MediaModelDatabase, onError: @escaping (Error) -> Void) {
     self.database = database
+    self.onError = onError
 
     // Allows AirPlay
     player.allowsExternalPlayback = true
@@ -99,15 +106,20 @@ extension MediaModel: PlayerViewModel {
 
     currentItem?.currentTime = player.currentTime()
 
-    let currentItem = database.getItem(for: url)
-    self.currentItem = currentItem
+    do {
+      let currentItem = try database.getItem(for: url)
+      self.currentItem = currentItem
 
-    let avAsset = AVAsset(url: url)
+      let avAsset = AVAsset(url: url)
 
-    let avItem = AVPlayerItem(asset: avAsset)
-    player.replaceCurrentItem(with: avItem)
+      let avItem = AVPlayerItem(asset: avAsset)
+      player.replaceCurrentItem(with: avItem)
 
-    player.seek(to: currentItem.currentTime)
+      player.seek(to: currentItem.currentTime)
 
-    play()
+      play()
+    } catch {
+      onError(error)
+    }
+  }
 }

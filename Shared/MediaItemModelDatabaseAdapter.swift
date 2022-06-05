@@ -11,33 +11,24 @@ import MediaPlayer
 
 @MainActor
 class MediaItemModelDatabaseAdapter: MediaModelDatabase {
-
   var context: NSManagedObjectContext
   var cachedItem: Item?
-
-  func save(_ mediaItem: MediaModelItem) {
-    do {
-      let item = try fetchOrCreate(for: mediaItem.url)
-
-      item.seekerTime = mediaItem.currentTime.seconds
-
-      try context.save()
-    } catch {
-      fatalError("")
-    }
-  }
 
   init(context: NSManagedObjectContext) {
     self.context = context
   }
+  
+  func save(_ mediaItem: MediaModelItem) throws {
+    let item = try fetchOrCreate(for: mediaItem.url)
 
-  func getItem(for url: URL) -> MediaModelItem {
-    do {
-      let item = try fetchOrCreate(for: url)
-      return MediaModelItem(currentTime: CMTime(seconds: item.seekerTime, preferredTimescale: CMTimeScale(NSEC_PER_SEC)), url: item.url ?? url)
-    } catch {
-      fatalError("")
-    }
+    item.seekerTime = mediaItem.currentTime.seconds
+
+    try context.save()
+  }
+
+  func getItem(for url: URL) throws -> MediaModelItem {
+    let item = try fetchOrCreate(for: url)
+    return MediaModelItem(currentTime: CMTime(seconds: item.seekerTime, preferredTimescale: CMTimeScale(NSEC_PER_SEC)), url: item.url ?? url)
   }
 
   private func fetchOrCreate(for url: URL) throws -> Item {
